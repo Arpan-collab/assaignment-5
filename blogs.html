@@ -45,7 +45,7 @@
     <nav
       class="mt-6 flex justify-between items-center bg-white rounded-2xl mb-5 p-4"
     >
-      <div class="">
+      <div>
         <div class="w-14 flex items-center">
           <img class="" src="../assets/logo.png" alt="" />
           <h1 class="text-4xl font-light ml-3 font-color">
@@ -54,8 +54,9 @@
         </div>
       </div>
 
-      <div>
-        <button class="text-white bg-indigo-700 p-5 rounded-2xl font-bold">
+      <div id="backToHomePageButton">
+        <button  onclick="backToHomePageButton()"
+        class="text-white bg-indigo-700 p-5 rounded-2xl font-bold">
           Back To Desk
         </button>
       </div>
@@ -128,5 +129,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
