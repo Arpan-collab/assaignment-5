@@ -1,10 +1,10 @@
 // linkup with blogs page
 document.getElementById("goToBlogsPage").addEventListener("click", function () {
-  window.location.href = "/blogs.html";
+  window.location.href = "blogs.html";
 });
 // linkup blogs to main page
 function backToHomePageButton() {
-  window.location.href = "./index.html";
+  window.location.href = "index.html";
 }
 
 // time with seconds function
@@ -130,3 +130,18 @@ const dayOfMonth = date.getDate();
 const year = date.getFullYear();
 nabDate.innerText = `${month} ${dayOfMonth} ${year}`;
 dayName.innerText = `${dayOfWeek} , `;
+
+
+// random colour when ever button clicked 
+
+const button = document.getElementById("randomColour");
+function changeBackground() {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+
+  // using inline variable
+  document.body.style.background =
+    "rgb(" + red + ", " + green + ", " + blue + ")";
+
+}
