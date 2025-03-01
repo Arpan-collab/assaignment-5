@@ -131,17 +131,13 @@ const year = date.getFullYear();
 nabDate.innerText = `${month} ${dayOfMonth} ${year}`;
 dayName.innerText = `${dayOfWeek} , `;
 
-
-// random colour when ever button clicked 
+// random colour when ever button clicked
 
 const button = document.getElementById("randomColour");
 function changeBackground() {
   const red = Math.floor(Math.random() * 256);
   const green = Math.floor(Math.random() * 256);
   const blue = Math.floor(Math.random() * 256);
-
-  // using inline variable
   document.body.style.background =
     "rgb(" + red + ", " + green + ", " + blue + ")";
-
 }
