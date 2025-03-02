@@ -27,7 +27,6 @@ function getTime() {
 function checkButtonsDisabled() {
   const buttons = document.querySelectorAll(".completed-btn");
   let allDisabled = true;
-
   for (let i = 0; i < buttons.length; i++) {
     if (!buttons[i].disabled) {
       allDisabled = false;
@@ -62,6 +61,7 @@ const btn = document.querySelectorAll(".completed-btn");
 const heading = document.getElementsByClassName(
   "text-2xl font-medium font-color font-color"
 );
+
 
 for (let j = 0; j < btn.length; j++) {
   const newbutton = btn[j];
