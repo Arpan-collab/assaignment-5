@@ -1,5 +1,6 @@
 // linkup with blogs page
-document.getElementById("goToBlogsPage").addEventListener("click", function () {
+const blog = document.getElementById("goToBlogsPage");
+blog.addEventListener("click", function () {
   window.location.href = "blogs.html";
 });
 // linkup blogs to main page
@@ -88,8 +89,7 @@ for (let j = 0; j < btn.length; j++) {
     <div class="p-4 mb-2">
     <h2>
     You have Complete The Task
-    ${cardHeading}
-    at   ${currentTime}
+    ${cardHeading} at ${currentTime}
     </h2>
     </div>`;
     msg.appendChild(div);
@@ -123,7 +123,7 @@ const months = [
 ];
 const nabDate = document.getElementById("showDate");
 const dayName = document.getElementById("dayName");
-const date = new Date(2025, 2, 1);
+const date = new Date();
 const dayOfWeek = days[date.getDay()];
 const month = months[date.getMonth()];
 const dayOfMonth = date.getDate();
@@ -131,11 +131,12 @@ const year = date.getFullYear();
 nabDate.innerText = `${month} ${dayOfMonth} ${year}`;
 dayName.innerText = `${dayOfWeek} , `;
 
-// random colour when ever button clicked
+// random colour whenever button clicked
 
 const button = document.getElementById("randomColour");
 function changeBackground() {
   const red = Math.floor(Math.random() * 256);
+  console.log(red);
   const green = Math.floor(Math.random() * 256);
   const blue = Math.floor(Math.random() * 256);
   document.body.style.background =
